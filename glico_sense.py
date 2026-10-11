@@ -182,7 +182,7 @@ def main():
     print(classification_report(y_test, best_pipeline.predict(X_test), labels=best_pipeline.classes_))
 
     # 9. Salvando o Arquivo Resultante do Melhor Modelo (.joblib)
-    output_model_path = "melhor_modelo.joblib"
+    output_model_path = "glico_sense.joblib"
     joblib.dump(best_pipeline, output_model_path)
     print(f"\n[+] Pipeline completa do melhor modelo salva com sucesso em: '{output_model_path}'")
 

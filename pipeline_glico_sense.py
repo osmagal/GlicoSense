@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 
 # Carregar o modelo enxuto com as 8 variáveis de maior correlação
-model = joblib.load("melhor_modelo.joblib")
+model = joblib.load("glico_sense.joblib")
 
 # Dados do paciente apenas com os 8 atributos essenciais
 paciente = pd.DataFrame([{
